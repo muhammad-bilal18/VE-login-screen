@@ -1,32 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Virtual Escape - Login</title>
-	<script src="https://cdn.tailwindcss.com"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<div id='root' class='flex justify-center items-center h-screen'>
-		<div class='w-[790px] h-[350px] container'>
-			<p class='title w-full text-center'>VIRTUAL ESCAPE</p>
-			<p class='instruction w-full text-center'>Enter your game code to get started</p>
-			<div class='w-full flex flex-col justify-center items-center mt-5'>
-				<div class='w-[60%] flex flex-row items-center relative'>
-					<input class='w-full pl-5 border-2 border-white border-t-gray-300 border-l-gray-300' type="text" placeholder='Game Code'>
-					<img class='absolute right-3' src="https://veautomation-fe-dev-dot-virtual-escape-295705.ts.r.appspot.com/static/media/tooltip.ccf899e2.svg" alt="">
-				</div>
-				<div class='w-[60%] flex justify-center items-center gap-5 mt-5'>
-					<button class='btn1 w-1/2 rounded-full'>TEST CONNECTION</button>
-					<button class='btn2 w-1/2 flex justify-center items-center gap-1 rounded-full opacity-80' disabled>
-						LOG IN
-						<i class="fa-solid fa-fingerprint"></i>
-					</button>
-				</div>
-			</div>
-		</div>
-	</div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Virtual Escape - Login</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="root" class="flex justify-center items-center h-screen">
+            <div
+                class="w-[392px] h-[300px] mx-1 lg:mx-0 lg:w-[790px] lg:h-[350px] container"
+            >
+                <p
+                    class="mt-[30px] w-full text-center text-[25.6px] lg:text-[48px]"
+                >
+                    VIRTUAL ESCAPE
+                </p>
+                <p
+                    class="instruction text-[11.2px] lg:text-[24px] w-full text-center"
+                >
+                    Enter your game code to get started
+                </p>
+                <div
+                    class="w-full flex flex-col justify-center items-center mt-5"
+                >
+                    <div
+                        class="w-full lg:w-[60%] flex flex-row items-center relative"
+                    >
+                        <input
+                            class="mx-[20px] lg:mx-0 w-full pl-5 border-2 border-white border-t-gray-300 border-l-gray-300"
+                            type="text"
+                            placeholder="Game Code"
+                        />
+                        <img
+                            class="absolute right-8 lg:right-3"
+                            src="https://veautomation-fe-dev-dot-virtual-escape-295705.ts.r.appspot.com/static/media/tooltip.ccf899e2.svg"
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        class="w-full mx-[20px] lg:mx-0 lg:w-[60%] flex justify-center items-center gap-1 lg:gap-5 mt-5"
+                    >
+                        <button
+                            class="btn1 text-white w-[175px] text-[11.2px] lg:text-[16px] lg:w-1/2 h-[55px] lg:h-[58px] rounded-full"
+                        >
+                            TEST CONNECTION
+                        </button>
+                        <button
+                            class="btn2 w-[175px] text-[11.2px] lg:text-[16px] lg:w-1/2 h-[55px] lg:h-[58px] flex justify-center items-center gap-1 rounded-full opacity-80"
+                            disabled
+                        >
+                            LOG IN
+                            <i class="fa-solid fa-fingerprint"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
